@@ -1,0 +1,18 @@
+
+
+.main {
+}
+
+/* Tablet styles */
+@media (min-width: 600px) {
+  .main{
+    background-color: lightblue;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .main {
+    background-color: lightgreen;
+  }
+}
