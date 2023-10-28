@@ -3,12 +3,6 @@
   margin: 0px;
 }
 
-.line,
-.plusFootball,
-.plusDarkFootball {
-  display: none;
-}
-
 .article {
   margin-left: 50%;
 }
@@ -70,7 +64,6 @@
   font-size: 20px;
   line-height: 28px;
   padding-top: 1.5em;
-  width: 717px;
 }
 
 .growth .titlenumber::after {
@@ -94,36 +87,23 @@
 
 /* Mobile styles */
 @media only screen and (max-width: 320px) {
-  .main {
-    background-color: lightgray;
+  .article {
+    margin-top: 50%;
+    margin-left: unset;
   }
 
-  /* Additional mobile styles here */
-}
-
-@media only screen and (width >=1024px) and (width <=1228px) {
   .football {
-    left: -121px;
+    position: absolute;
+    width: 218px;
+    height: 281px;
+    top: 70px;
+    left: 52px;
   }
 
-  .description {
-    width: 517px;
-  }
 }
-
-@media only screen and (width >=1228px) and (width <=1600px) {
-  .football {
-    left: 0px;
-  }
-
-  .description {
-    width: 557px;
-  }
-}
-
 
 /* Tablet styles */
-@media only screen and (width <=1024px) {
+@media only screen and (min-width: 786px) {
   .football {
     left: -161px;
     top: 120px;
@@ -197,4 +177,35 @@
     z-index: -1;
   }
 
+}
+
+@media only screen and (min-width: 992px) {
+  .football {
+    left: -121px;
+  }
+
+  .description {
+    width: 517px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .football {
+    left: 0px;
+  }
+
+  .description {
+    width: 557px;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1600px) {
+  .football {
+    width: 678px;
+  }
+
+  .description {
+    width: 717px;
+  }
 }
