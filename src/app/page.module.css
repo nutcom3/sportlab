@@ -70,6 +70,7 @@
   font-size: 20px;
   line-height: 28px;
   padding-top: 1.5em;
+  width: 717px;
 }
 
 .growth .titlenumber::after {
@@ -100,8 +101,29 @@
   /* Additional mobile styles here */
 }
 
+@media only screen and (width >=1024px) and (width <=1228px) {
+  .football {
+    left: -121px;
+  }
+
+  .description {
+    width: 517px;
+  }
+}
+
+@media only screen and (width >=1228px) and (width <=1600px) {
+  .football {
+    left: 0px;
+  }
+
+  .description {
+    width: 557px;
+  }
+}
+
+
 /* Tablet styles */
-@media only screen and (max-width: 768px) {
+@media only screen and (width <=1024px) {
   .football {
     left: -161px;
     top: 120px;
