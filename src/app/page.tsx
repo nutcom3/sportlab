@@ -1,11 +1,17 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import FootBall from '../../public/football.svg'
+import PlusDark from '../../public/plusdark.svg'
+import Plus from '../../public/plus.svg'
+import Line from '../../public/line.svg'
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Image src={Plus} alt="plus" className={styles.plusFootball} width={0} height={0} />
+      <Image src={PlusDark} alt="plusdark" className={styles.plusDarkFootball} width={0} height={0} />
       <Image src={FootBall} alt="Football" className={styles.football} width={0} height={0} />
+      <Image src={Line} alt="line" className={styles.line} width={0} height={0} />
       <div className={styles.connection}>
         <div className={styles.article}>
           <div className={styles.athlets}>ATHLETS</div>
@@ -19,7 +25,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`${styles.rowleft} ${styles.collaboration}`}>
+      <div className={`${styles.collaboration}`}>
         <div className={styles.article}>
           <div className={styles.title}>
             <div className={styles.titlenumber}>02</div>
@@ -31,7 +37,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`${styles.rowleft} ${styles.growth}`}>
+      <div className={`${styles.growth}`}>
         <div className={styles.article}>
           <div className={styles.title}>
             <div className={styles.titlenumber}>03</div>

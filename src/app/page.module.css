@@ -3,6 +3,12 @@
   margin: 0px;
 }
 
+.line,
+.plusFootball,
+.plusDarkFootball {
+  display: none;
+}
+
 .article {
   margin-left: 50%;
 }
@@ -90,6 +96,7 @@
   .main {
     background-color: lightgray;
   }
+
   /* Additional mobile styles here */
 }
 
@@ -110,7 +117,7 @@
     height: 377px;
   }
 
-  .connection .title{
+  .connection .title {
     padding-top: 36px
   }
 
@@ -136,4 +143,36 @@
   .growth {
     height: 207px;
   }
+
+  .plusDarkFootball {
+    display: unset;
+    position: absolute;
+    width: 15.602px;
+    height: 15px;
+    flex-shrink: 0;
+    top: 110px;
+    left: 59.51px;
+  }
+
+  .plusFootball {
+    display: unset;
+    position: absolute;
+    width: 15.602px;
+    height: 15px;
+    flex-shrink: 0;
+    top: 101px;
+    left: 36.63px;
+  }
+
+  .line {
+    display: unset;
+    position: absolute;
+    width: 217.679px;
+    height: 233.717px;
+    flex-shrink: 0;
+    top: 138.89px;
+    left: 36.54px;
+    z-index: -1;
+  }
+
 }
