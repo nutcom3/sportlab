@@ -44,15 +44,41 @@
   line-height: 28px;
 }
 
-.growth .description {
-  color: #FFFFFF;
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 7px;
+  background-color: #D8D8D8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #5C3CAF;
 }
 
 /* Mobile styles */
 @media only screen and (max-width: 620px) {
+  .dotgroup {
+    position: absolute;
+    left: 120px;
+    bottom: 30px;
+  }
+
   .article {
     margin-top: 50%;
     margin-left: unset;
+  }
+
+  .dotgroup {
+    text-align: center;
   }
 
   .football {
@@ -106,14 +132,11 @@
     z-index: -1;
   }
 
-  .collaboration, .growth {
+  .connection, .collaboration, .growth {
     display: none;
-  }
-
-  .connection {
     background-color: #F5F4F9;
     margin-top: 237px;
-    padding-left: 18px;
+    padding-left: 22px;
     height: 284px;
   }
 
@@ -128,9 +151,22 @@
   .titletext {
     font-size: 28px;
   }
+
+  .description {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 20px;
+    width: 284px;
+  }
 }
 
 @media only screen and (min-width: 620px) {
+  .dotgroup {
+    display: none;
+  }
+
   .main {
     position: relative;
     margin: 0px;
@@ -188,7 +224,7 @@
   }
 
   .growth {
-    background-color: #5E3DB3;
+    background-color: #5E3DB3 !important;
   }
 
   .collaboration {
@@ -271,6 +307,10 @@
     font-style: normal;
     width: 447px;
   }
+
+  .growth .description {
+    color: #FFFFFF;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -338,6 +378,7 @@
 
 /* Desktop styles */
 @media only screen and (min-width: 1280px) {
+
   .headArticle,
   .article {
     margin-left: 50%;
