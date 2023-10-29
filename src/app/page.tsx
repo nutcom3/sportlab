@@ -8,13 +8,19 @@ import Line from '../../public/line.svg'
 export default function Home() {
   return (
     <main className={styles.main}>
+        <div className={styles.athlets}>
+        <div className={styles.headArticle}>
+          <div className={styles.athletsText}>ATHLETS</div>
+        </div>
+      </div>
+
       <Image src={Plus} alt="plus" className={styles.plusFootball} width={0} height={0} />
       <Image src={PlusDark} alt="plusdark" className={styles.plusDarkFootball} width={0} height={0} />
       <Image src={FootBall} alt="Football" className={styles.football} width={0} height={0} />
       <Image src={Line} alt="line" className={styles.line} width={0} height={0} />
+
       <div className={styles.connection}>
         <div className={styles.article}>
-          <div className={styles.athlets}>ATHLETS</div>
           <div className={styles.title}>
             <div className={styles.titlenumber}>01</div>
             <div className={styles.titletext}>CONNECTION</div>
@@ -44,7 +50,7 @@ export default function Home() {
             <div className={styles.titletext}>GROWTH</div>
           </div>
           <div className={styles.description}>
-          Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc 
+            Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc
           </div>
         </div>
       </div>

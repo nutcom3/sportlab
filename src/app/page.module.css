@@ -3,35 +3,15 @@
   margin: 0px;
 }
 
-.article {
-  margin-left: 50%;
-}
-
 .football {
   position: absolute;
-  width: 678px;
-  height: 950px;
-  top: 35px;
-  left: 175px;
-}
-
-.connection {
-  height: 345px;
-}
-
-.athlets {
-  font-weight: 400;
-  font-size: 90px;
-  line-height: 105.47px;
-  color: #E7E7E7;
-  padding-top: 20px;
+  z-index: 1;
 }
 
 .title {
   letter-spacing: 1.5px;
   font-weight: 400;
   display: inline-flex;
-  padding-top: 3.5rem;
 }
 
 .titlenumber {
@@ -39,14 +19,14 @@
   line-height: 21.09px;
   position: relative;
   display: inline-block;
-  padding: 10px 10px 10px 0px;
+  padding: 5px 10px 10px 5px;
 }
 
 .titlenumber::after {
   content: '';
   position: absolute;
-  bottom: 1px;
-  left: 35%;
+  bottom: 5px;
+  left: 38%;
   transform: translateX(-50%);
   width: 22px;
   height: 5px;
@@ -61,32 +41,15 @@
 
 .description {
   font-weight: 400;
-  font-size: 20px;
   line-height: 28px;
-  padding-top: 1.5em;
-}
-
-.growth .titlenumber::after {
-  background-color: #FFFFFF;
-}
-
-.growth {
-  height: 297px;
-  background-color: #5E3DB3;
 }
 
 .growth .description {
   color: #FFFFFF;
 }
 
-.collaboration {
-  height: 256px;
-  background-color: #F5F4F9;
-}
-
-
 /* Mobile styles */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 620px) {
   .article {
     margin-top: 50%;
     margin-left: unset;
@@ -97,53 +60,139 @@
     width: 218px;
     height: 281px;
     top: 70px;
-    left: 52px;
-  }
-
-}
-
-/* Tablet styles */
-@media only screen and (min-width: 786px) {
-  .football {
-    left: -161px;
-    top: 120px;
-    width: 518px;
-    height: 699px;
-  }
-
-  .article {
-    margin-left: 38%;
-  }
-
-  .connection {
-    height: 377px;
-  }
-
-  .connection .title {
-    padding-top: 36px
+    left: 70px;
   }
 
   .athlets {
-    padding-top: 87px;
+    padding-left: 18px;
+    line-height: 58.59px;
   }
 
-  .title {
-    padding-top: 30px;
+  .athletsText {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58.59px;
+    color: #E7E7E7;
+  }
+
+  .plusDarkFootball {
+    display: unset;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    top: 90px;
+    left: 74px;
+  }
+
+  .plusFootball {
+    display: unset;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    top: 81px;
+    left: 52px;
+  }
+
+  .line {
+    display: unset;
+    position: absolute;
+    width: 178.89px;
+    height: 197.23px;
+    flex-shrink: 0;
+    top: 82.91px;
+    left: 69.36px;
+    z-index: -1;
+  }
+
+  .collaboration, .growth {
+    display: none;
+  }
+
+  .connection {
+    background-color: #F5F4F9;
+    margin-top: 237px;
+    padding-left: 18px;
+    height: 284px;
+  }
+
+  .article {
+    padding-top: 72px;
+  }
+
+  .titlenumber {
+    font-size: 14px;
+  }
+
+  .titletext {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .main {
+    position: relative;
+    margin: 0px;
+  }
+
+  .athletsText {
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 105.47px;
+    color: #E7E7E7;
+    padding-top: 20px;
+  }
+
+  .headArticle,
+  .article {
+    margin-left: 40%;
+  }
+
+  .football {
+    left: -200px;
+    top: 120px;
+    width: 518px;
+    height: 699px;
   }
 
   .description {
     font-size: 18px;
     padding-top: 21px;
     font-style: normal;
-    width: 447px;
+    width: 350px;
   }
 
-  .collaboration {
-    height: 235px;
+  .titlenumber {
+    font-size: 18px;
+    line-height: 21.09px;
+    position: relative;
+    display: inline-block;
+    padding: 6px 10px 6px 0px;
+  }
+
+  .titlenumber::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 34%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 5px;
+    background-color: #603EBE;
+    border-radius: 10px;
+  }
+
+  .growth .titlenumber::after {
+    background-color: #FFFFFF;
   }
 
   .growth {
-    height: 207px;
+    background-color: #5E3DB3;
+  }
+
+  .collaboration {
+    background-color: #F5F4F9;
   }
 
   .plusDarkFootball {
@@ -177,35 +226,240 @@
     z-index: -1;
   }
 
+  .athletsText {
+    padding-top: 80px;
+  }
+
+  .connection {
+    height: 180px;
+  }
+
+  .connection .title {
+    padding-top: 36px;
+  }
+
+  .collaboration {
+    height: 270px;
+  }
+
+  .collaboration .article {
+    padding-top: 30px;
+  }
+
+  .growth {
+    height: 220px;
+  }
+
+  .growth .article {
+    padding-top: 30px;
+  }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+  .athletsText {
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 105.47px;
+    color: #E7E7E7;
+    padding-top: 20px;
+  }
+
+  .description {
+    font-size: 18px;
+    padding-top: 21px;
+    font-style: normal;
+    width: 447px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
+  .athletsText {
+    padding-top: unset;
+  }
+
+  .athlets {
+    padding-top: 24px
+  }
+
+  .headArticle,
+  .article {
+    margin-left: 47%;
+  }
+
   .football {
-    left: -121px;
+    height: 800px;
+    top: 45px;
+    left: -10px;
   }
 
   .description {
     width: 517px;
   }
-}
 
-@media only screen and (min-width: 1200px) {
-  .football {
-    left: 0px;
+  .line,
+  .plusFootball,
+  .plusDarkFootball {
+    display: none;
   }
 
   .description {
-    width: 557px;
+    width: 460px;
+  }
+
+  .collaboration {
+    height: 203px;
+  }
+
+  .connection {
+    height: 220px;
+  }
+
+  .connection .title {
+    padding-top: 59px;
+  }
+
+  .growth {
+    height: 250px;
+  }
+
+  .growth .article {
+    padding-top: 50px;
+  }
+
+  .collaboration {
+    height: 250px;
+  }
+
+  .collaboration .article {
+    padding-top: 23px;
   }
 }
 
 /* Desktop styles */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1280px) {
+  .headArticle,
+  .article {
+    margin-left: 50%;
+  }
+
+  .connection {
+    height: 200px;
+  }
+
   .football {
     width: 678px;
+    height: 950px;
+    top: 35px;
+    left: 20px;
+  }
+
+  .line,
+  .plusFootball,
+  .plusDarkFootball {
+    display: none;
   }
 
   .description {
+    font-size: 20px;
+    width: 600px;
+  }
+
+  .connection {
+    height: 220px;
+  }
+
+  .connection .title {
+    padding-top: 59px;
+  }
+
+  .growth {
+    height: 297px;
+  }
+
+  .growth .article {
+    padding-top: 80px;
+  }
+
+  .collaboration {
+    height: 256px;
+  }
+
+  .collaboration .article {
+    padding-top: 53px;
+  }
+
+}
+
+@media only screen and (min-width: 1600px) {
+  .description {
     width: 717px;
+  }
+
+  .football {
+    width: 678px;
+    height: 950px;
+    top: 35px;
+    left: 125px;
+  }
+
+  .headArticle {
+    padding-top: 24px;
+  }
+
+  .article {
+    position: absolute;
+  }
+
+  .athlets {
+    padding-top: 0px;
+  }
+
+  .connection, .collaboration, .growth {
+    position: relative;
+    z-index: -1;
+  }
+
+  .connection .description {
+    padding-top: 31px;
+  }
+
+  .connection {
+    height: 220px;
+  }
+
+  .connection .title {
+    padding-top: 59px;
+  }
+
+  .growth {
+    height: 297px;
+  }
+
+  .growth .article {
+    padding-top: 80px;
+  }
+
+  .collaboration {
+    height: 256px;
+  }
+
+  .collaboration .article {
+    padding-top: 53px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+
+  .headArticle,
+  .article {
+    margin-left: 1008px;
+  }
+
+  .football {
+    width: 678px;
+    height: 950px;
+    top: 35px;
+    left: 175px;
   }
 }
