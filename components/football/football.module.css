@@ -1,0 +1,239 @@
+.football {
+  position: absolute;
+  z-index: 1;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 7px;
+  background-color: #D8D8D8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #5C3CAF;
+}
+
+@media only screen and (max-width: 620px) {
+  .football {
+    position: absolute;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -180px;
+  }
+
+  .plusDarkFootball {
+    display: unset;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
+    top: 90px;
+    left: 20%;
+  }
+
+  .plusFootball {
+    display: unset;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 81px;
+    left: 13%;
+    flex-shrink: 0;
+  }
+
+  .line {
+    display: unset;
+    position: absolute;
+    width: 336.89px;
+    height: 297.23px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 82.91px;
+    left: 5%;
+    z-index: -1;
+  }
+
+  .dotgroup {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+  }
+
+  .dotgroup {
+    text-align: center;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 320px) {
+  .football {
+    position: absolute;
+    width: 218px;
+    height: 281px;
+    top: 70px;
+    left: 52px;
+  }
+
+  .plusDarkFootball {
+    display: unset;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    top: 90px;
+    left: 74px;
+  }
+
+  .plusFootball {
+    display: unset;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    top: 81px;
+    left: 52px;
+  }
+
+  .line {
+    display: unset;
+    position: absolute;
+    width: 178.89px;
+    height: 197.23px;
+    flex-shrink: 0;
+    top: 82.91px;
+    left: 69.36px;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .football {
+    left: -201px;
+    top: 120px;
+    width: 518px;
+    height: 699px;
+  }
+
+  .plusDarkFootball {
+    display: unset;
+    position: absolute;
+    width: 15.602px;
+    height: 15px;
+    flex-shrink: 0;
+    top: 110px;
+    left: 59.51px;
+  }
+
+  .plusFootball {
+    display: unset;
+    position: absolute;
+    width: 15.602px;
+    height: 15px;
+    flex-shrink: 0;
+    top: 101px;
+    left: 36.63px;
+  }
+
+  .line {
+    display: unset;
+    position: absolute;
+    width: 217.679px;
+    height: 233.717px;
+    flex-shrink: 0;
+    top: 138.89px;
+    left: 36.54px;
+    z-index: -1;
+  }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+  .football {
+    left: -161px;
+    top: 120px;
+    width: 518px;
+    height: 699px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .football {
+    height: 800px;
+    top: 45px;
+    left: -10px;
+  }
+
+  .line,
+  .plusFootball,
+  .plusDarkFootball {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .football {
+    width: 678px;
+    height: 950px;
+    top: 35px;
+    left: 20px;
+  }
+
+  .line,
+  .plusFootball,
+  .plusDarkFootball {
+    display: none;
+  }
+
+  .dotgroup {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .dotgroup {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .dotgroup {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .football {
+    width: 678px;
+    height: 950px;
+    top: 35px;
+    left: 125px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .football {
+    width: 678px;
+    height: 950px;
+    top: 35px;
+    left: 175px;
+  }
+}
