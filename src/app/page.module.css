@@ -209,8 +209,6 @@
     height: 699px;
   }
 
-
-
   .plusDarkFootball {
     display: unset;
     position: absolute;
@@ -253,6 +251,17 @@
     line-height: 105.47px;
     color: #E7E7E7;
     padding-top: 87px;
+  }
+
+  .headArticle {
+    margin-left: 291px;
+  }
+
+  .football {
+    left: -161px;
+    top: 120px;
+    width: 518px;
+    height: 699px;
   }
 }
 

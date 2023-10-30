@@ -102,7 +102,6 @@
 
 @media only screen and (min-width: 620px) {
   .article {
-    padding-top: 30px;
     margin-left: 40%;
   }
 
@@ -155,11 +154,7 @@
     font-size: 18px;
     padding-top: 21px;
     font-style: normal;
-    width: 350px;
-  }
-
-  .second {
-    padding-top: 15px;
+    width: 385px;
   }
 
   .thrid .titlenumber::after {
@@ -179,7 +174,7 @@
   }
 
   .second {
-    height: 235px;
+    height: 250px;
   }
 
   .thrid .article,
@@ -200,6 +195,10 @@
     font-style: normal;
     width: 447px;
   }
+
+  .article {
+    margin-left: 291px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -212,15 +211,11 @@
   }
 
   .first .title {
-    padding-top: 59px;
+    padding-top: 40px;
   }
 
   .second {
     height: 250px;
-  }
-
-  .second .article {
-    padding-top: 23px;
   }
 
   .thrid {
@@ -240,14 +235,6 @@
   .description {
     font-size: 20px;
     width: 600px;
-  }
-
-  .second {
-    padding-top: 80px;
-  }
-
-  .thrid {
-    padding-top: 80px;
   }
 
   .first {
