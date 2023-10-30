@@ -83,7 +83,6 @@
     font-weight: 400;
     line-height: normal;
     padding-top: 20px;
-    width: 284px;
   }
 
   .article {
@@ -97,6 +96,7 @@
     margin-top: 237px;
     padding-left: 22px;
     height: 284px;
+    width: 285px;
   }
 }
 
