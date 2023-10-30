@@ -1,10 +1,10 @@
-.title {
+.title2 {
   letter-spacing: 1.5px;
   font-weight: 400;
   display: inline-flex;
 }
 
-.titlenumber {
+.titlenumber2 {
   font-size: 18px;
   line-height: 21.09px;
   position: relative;
@@ -12,7 +12,7 @@
   padding: 5px 10px 10px 5px;
 }
 
-.titlenumber::after {
+.titlenumber2::after {
   content: '';
   position: absolute;
   bottom: 5px;
@@ -24,12 +24,12 @@
   border-radius: 10px;
 }
 
-.titletext {
+.titletext2 {
   font-size: 36px;
   color: #C2C2C2;
 }
 
-.description {
+.description2 {
   font-weight: 400;
   line-height: 28px;
 }
@@ -40,19 +40,18 @@
     background-color: #F5F4F9;
     margin-top: 400px;
     padding-left: 22px;
-    padding-right: 22px;
     height: 284px;
   }
 
-  .titlenumber {
+  .titlenumber2 {
     font-size: 14px;
   }
 
-  .titletext {
+  .titletext2 {
     font-size: 28px;
   }
 
-  .description {
+  .description2 {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -61,7 +60,7 @@
     width: auto;
   }
 
-  .article {
+  .article2 {
     margin-top: 50%;
     padding-top: 72px;
   }
@@ -69,15 +68,15 @@
 
 /* Mobile styles */
 @media only screen and (max-width: 320px) {
-  .titlenumber {
+  .titlenumber2 {
     font-size: 14px;
   }
 
-  .titletext {
+  .titletext2 {
     font-size: 28px;
   }
 
-  .description {
+  .description2 {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -85,7 +84,7 @@
     padding-top: 20px;
   }
 
-  .article {
+  .article2 {
     margin-top: 50%;
     padding-top: 72px;
   }
@@ -95,13 +94,13 @@
     background-color: #F5F4F9;
     margin-top: 237px;
     padding-left: 22px;
-    height: 284px;
+    height: 238px;
     width: 285px;
   }
 }
 
 @media only screen and (min-width: 620px) {
-  .article {
+  .article2 {
     margin-left: 40%;
   }
 
@@ -113,15 +112,15 @@
     background-color: #5E3DB3 !important;
   }
 
-  .titlenumber {
+  .titlenumber2 {
     font-size: 14px;
   }
 
-  .titletext {
+  .titletext2 {
     font-size: 28px;
   }
 
-  .description {
+  .description2 {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -130,7 +129,7 @@
     width: 284px;
   }
 
-  .titlenumber {
+  .titlenumber2 {
     font-size: 18px;
     line-height: 21.09px;
     position: relative;
@@ -138,7 +137,7 @@
     padding: 3px 10px 6px 1px;
   }
 
-  .titlenumber::after {
+  .titlenumber2::after {
     content: '';
     position: absolute;
     bottom: 2px;
@@ -150,18 +149,18 @@
     border-radius: 10px;
   }
 
-  .description {
+  .description2 {
     font-size: 18px;
     padding-top: 21px;
     font-style: normal;
     width: 385px;
   }
 
-  .thrid .titlenumber::after {
+  .thrid .titlenumber2::after {
     background-color: #FFFFFF;
   }
 
-  .thrid .description {
+  .thrid .description2 {
     color: #FFFFFF;
   }
 
@@ -169,7 +168,7 @@
     height: 190px;
   }
 
-  .first .title {
+  .first .title2 {
     padding-top: 36px;
   }
 
@@ -177,8 +176,8 @@
     height: 250px;
   }
 
-  .thrid .article,
-  .second .article {
+  .thrid .article2,
+  .second .article2 {
     padding-top: 30px;
   }
 
@@ -189,7 +188,7 @@
 
 /* Tablet styles */
 @media only screen and (min-width: 768px) {
-  .description {
+  .description2 {
     font-size: 18px;
     padding-top: 21px;
     font-style: normal;
@@ -197,17 +196,17 @@
     padding-right: 30px;
   }
 
-  .article {
+  .article2 {
     margin-left: 291px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .article {
+  .article2 {
     margin-left: 47%;
   }
 
-  .first .title {
+  .first .title2 {
     padding-top: 40px;
   }
 
@@ -216,17 +215,17 @@
     height: 250px;
   }
 
-  .thrid .article {
+  .thrid .article2 {
     padding-top: 50px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .article {
+  .article2 {
     margin-left: 50%;
   }
 
-  .description {
+  .description2 {
     font-size: 20px;
   }
 
@@ -234,7 +233,7 @@
     height: 220px;
   }
 
-  .first .title {
+  .first .title2 {
     padding-top: 59px;
   }
 
@@ -242,7 +241,7 @@
     height: 256px;
   }
 
-  .second .article {
+  .second .article2 {
     padding-top: 53px;
   }
 
@@ -250,17 +249,17 @@
     height: 297px;
   }
 
-  .thrid .article {
+  .thrid .article2 {
     padding-top: 80px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .article {
+  .article2 {
     position: absolute;
   }
 
-  .description {
+  .description2 {
     width: 717px;
   }
 
@@ -269,14 +268,14 @@
     z-index: -1;
   }
 
-  .first .description {
+  .first .description2 {
     padding-top: 31px;
   }
 }
 
 /* Desktop styles */
 @media screen and (min-width: 1920px) {
-  .article {
+  .article2 {
     margin-left: 1008px;
   }
 }

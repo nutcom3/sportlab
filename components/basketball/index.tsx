@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import styles from './basketball.module.css'
-import FootBall from '../../public/football.svg'
+import BasketBall from '../../public/basketball.svg'
 import PlusDark from '../../public/plusdark.svg'
 import Plus from '../../public/plus.svg'
 import Line from '../../public/line.svg'
@@ -19,27 +19,27 @@ export interface IContent {
 let connection: IContent = {
   no: "01",
   title: "CONNECTION",
-  description: "Connect with coaches directly, you can ping coaches to view profile."
+  description: "Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1."
 }
 
 let collaboration: IContent = {
   no: "02",
   title: "COLLABORATION",
-  description: "Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1."
+  description: "Work with recruiter to increase your chances of findingtalented athlete."
 }
 
 let growth: IContent = {
   no: "03",
   title: "GROWTH",
-  description: "Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc"
+  description: "Save your time, recruit proper athlets for your team."
 }
 
 export default function Basketball() {
   const [slideIndex, setSlideIndex] = useState(1);
 
   useEffect(() => {
-    const slides: HTMLCollection = document.getElementsByClassName('slider') as HTMLCollection;
-    const dots: HTMLCollection = document.getElementsByClassName('dot') as HTMLCollection;
+    const slides: HTMLCollection = document.getElementsByClassName('slider2') as HTMLCollection;
+    const dots2: HTMLCollection = document.getElementsByClassName('dot2') as HTMLCollection;
 
     const showSlides = (n: number) => {
       /* if mobile size */
@@ -58,12 +58,12 @@ export default function Basketball() {
         });
 
         /* reset dots */
-        Array.from(dots).forEach((dot, i) => {
+        Array.from(dots2).forEach((dot, i) => {
           dot.className = dot.className.replace(styles.active, "");
         });
 
         (slides[slideIndex - 1] as HTMLElement).style.display = "block";
-        (dots[slideIndex - 1] as HTMLElement).className += ` ${styles.active}`;
+        (dots2[slideIndex - 1] as HTMLElement).className += ` ${styles.active}`;
       } else {
         Array.from(slides).forEach((slide, i) => {
           (slide as HTMLElement).style.display = "block";
@@ -81,9 +81,7 @@ export default function Basketball() {
       window.removeEventListener('resize', handleResize);
     };
   }, [slideIndex]);
-
-
-
+  
   const plusSlides = (index: number) => {
     let newIndex = slideIndex + index;
     if (newIndex > 3) {
@@ -98,22 +96,24 @@ export default function Basketball() {
 
   return (
     <div className={styles.main}>
-      <div className={styles.footballContent} onClick={() => plusSlides(1)}>
+      <div onClick={() => plusSlides(1)}>
         <Player />
 
-        <Image src={Plus} alt="plus" className={styles.plusFootball} width={0} height={0} />
-        <Image src={PlusDark} alt="plusdark" className={styles.plusDarkFootball} width={0} height={0} />
-        <Image src={FootBall} alt="Football" className={styles.football} width={0} height={0} />
-        <Image src={Line} alt="line" className={styles.line} width={0} height={0} />
+        <Image src={Plus} alt="plus" className={styles.plusBasketball} width={0} height={0} />
+        <Image src={PlusDark} alt="plusdark" className={styles.plusDarkBasketball} width={0} height={0} />
+        <Image src={PlusDark} alt="plusdark2" className={styles.plusDarkBasketball2} width={0} height={0} />
+        <Image src={BasketBall} alt="BasketBall" className={styles.basketball} width={0} height={0} />
+        <Image src={Line} alt="line" className={styles.lineBas} width={0} height={0} />
+        <Image src={Line} alt="line2" className={styles.lineBas2} width={0} height={0} />
 
         <Content data={connection} />
         <Content data={collaboration} />
         <Content data={growth} />
 
-        <div className={styles.dotgroup}>
-          <span className={`dot ${styles.dot}`} onClick={() => currentSlide(1)}></span>
-          <span className={`dot ${styles.dot}`} onClick={() => currentSlide(2)}></span>
-          <span className={`dot ${styles.dot}`} onClick={() => currentSlide(3)}></span>
+        <div className={styles.dotgroup2}>
+          <span className={`dot2 ${styles.dot2}`} onClick={() => currentSlide(1)}></span>
+          <span className={`dot2 ${styles.dot2}`} onClick={() => currentSlide(2)}></span>
+          <span className={`dot2 ${styles.dot2}`} onClick={() => currentSlide(3)}></span>
         </div>
       </div>
     </div>

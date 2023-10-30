@@ -36,21 +36,7 @@
 
 @media only screen and (max-width: 620px) {
   .athlets {
-    padding-left: 18px;
-    line-height: 58.59px;
-  }
-
-  .athletsText {
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 58.59px;
-    color: #E7E7E7;
-  }
-}
-
-/* Mobile styles */
-@media only screen and (max-width: 320px) {
-  .athlets {
+    padding-top: 19px;
     padding-left: 18px;
     line-height: 58.59px;
   }
