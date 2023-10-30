@@ -53,7 +53,7 @@ export default function Home() {
 
   const showSlides = (n: number) => {
     /* if mobile size */
-    if (window.innerWidth <=  619) {
+    if (window.innerWidth <= 619) {
       if (n > slides.length) {
         setSlideIndex(1);
       }
@@ -107,17 +107,9 @@ export default function Home() {
         <Image src={FootBall} alt="Football" className={styles.football} width={0} height={0} />
         <Image src={Line} alt="line" className={styles.line} width={0} height={0} />
 
-        <div className={`${styles.connection} slider`}>
-          <Content data={connection} />
-        </div>
-
-        <div className={`${styles.collaboration} slider`}>
-          <Content data={collaboration} />
-        </div>
-
-        <div className={`${styles.growth} slider`}>
-          <Content data={growth} />
-        </div>
+        <Content data={connection} />
+        <Content data={collaboration} />
+        <Content data={growth} />
 
         <div className={styles.dotgroup}>
           <span className={`dot ${styles.dot}`} onClick={() => currentSlide(1)}></span>

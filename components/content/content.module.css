@@ -34,6 +34,40 @@
   line-height: 28px;
 }
 
+@media only screen and (max-width: 620px) {
+  .first, .second, .thrid {
+    display: none;
+    background-color: #F5F4F9;
+    margin-top: 400px;
+    padding-left: 22px;
+    padding-right: 22px;
+    height: 284px;
+  }
+
+  .titlenumber {
+    font-size: 14px;
+  }
+
+  .titletext {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 20px;
+    width: auto;
+  }
+
+  .article {
+    margin-top: 50%;
+    padding-top: 72px;
+  }
+}
+
+/* Mobile styles */
 @media only screen and (max-width: 320px) {
   .titlenumber {
     font-size: 14px;
@@ -56,12 +90,28 @@
     margin-top: 50%;
     padding-top: 72px;
   }
+
+  .first, .second, .thrid {
+    display: none;
+    background-color: #F5F4F9;
+    margin-top: 237px;
+    padding-left: 22px;
+    height: 284px;
+  }
 }
 
 @media only screen and (min-width: 620px) {
   .article {
     padding-top: 30px;
     margin-left: 40%;
+  }
+
+  .second {
+    background-color: #F5F4F9;
+  }
+
+  .thrid {
+    background-color: #5E3DB3 !important;
   }
 
   .titlenumber {
@@ -119,32 +169,30 @@
   .thrid .description {
     color: #FFFFFF;
   }
-}
 
-@media only screen and (max-width: 620px) {
-  .titlenumber {
-    font-size: 14px;
+  .first {
+    height: 190px;
   }
 
-  .titletext {
-    font-size: 28px;
+  .first .title {
+    padding-top: 36px;
   }
 
-  .description {
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-top: 20px;
-    width: auto;
+  .second {
+    height: 235px;
   }
 
-  .article {
-    margin-top: 50%;
-    padding-top: 72px;
+  .thrid .article,
+  .second .article {
+    padding-top: 30px;
+  }
+
+  .thrid {
+    height: 220px;
   }
 }
 
+/* Tablet styles */
 @media only screen and (min-width: 768px) {
   .description {
     font-size: 18px;
@@ -161,6 +209,26 @@
 
   .description {
     width: 460px;
+  }
+
+  .first .title {
+    padding-top: 59px;
+  }
+
+  .second {
+    height: 250px;
+  }
+
+  .second .article {
+    padding-top: 23px;
+  }
+
+  .thrid {
+    height: 250px;
+  }
+
+  .thrid .article {
+    padding-top: 50px;
   }
 }
 
@@ -181,6 +249,30 @@
   .thrid {
     padding-top: 80px;
   }
+
+  .first {
+    height: 220px;
+  }
+
+  .first .title {
+    padding-top: 59px;
+  }
+
+  .second {
+    height: 256px;
+  }
+
+  .second .article {
+    padding-top: 53px;
+  }
+
+  .thrid {
+    height: 297px;
+  }
+
+  .thrid .article {
+    padding-top: 80px;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -191,8 +283,43 @@
   .description {
     width: 717px;
   }
+
+  .first, .second, .third {
+    position: relative;
+    z-index: -1;
+  }
+
+  .first .description {
+    padding-top: 31px;
+  }
+
+  .first {
+    height: 220px;
+  }
+
+  .first .title {
+    padding-top: 59px;
+  }
+
+  .second {
+    height: 256px;
+  }
+
+  .second .article {
+    padding-top: 53px;
+  }
+
+  .third {
+    height: 297px;
+  }
+
+  .third .article {
+    padding-top: 80px;
+  }
+
 }
 
+/* Desktop styles */
 @media screen and (min-width: 1920px) {
   .article {
     margin-left: 1008px;
