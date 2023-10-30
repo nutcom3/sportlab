@@ -1,14 +1,14 @@
 "use client";
 
 import Image from 'next/image'
-import styles from './football.module.css'
+import styles from './basketball.module.css'
 import FootBall from '../../public/football.svg'
 import PlusDark from '../../public/plusdark.svg'
 import Plus from '../../public/plus.svg'
 import Line from '../../public/line.svg'
 import React, { useState, useEffect } from 'react'
 import Content from './content';
-import Athlets from './athlets';
+import Player from './player';
 
 export interface IContent {
   no: string,
@@ -34,9 +34,8 @@ let growth: IContent = {
   description: "Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc"
 }
 
-export default function Football() {
+export default function Basketball() {
   const [slideIndex, setSlideIndex] = useState(1);
-
 
   useEffect(() => {
     const slides: HTMLCollection = document.getElementsByClassName('slider') as HTMLCollection;
@@ -100,7 +99,7 @@ export default function Football() {
   return (
     <div className={styles.main}>
       <div className={styles.footballContent} onClick={() => plusSlides(1)}>
-        <Athlets />
+        <Player />
 
         <Image src={Plus} alt="plus" className={styles.plusFootball} width={0} height={0} />
         <Image src={PlusDark} alt="plusdark" className={styles.plusDarkFootball} width={0} height={0} />
