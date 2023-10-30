@@ -7,7 +7,31 @@ import PlusDark from '../../public/plusdark.svg'
 import Plus from '../../public/plus.svg'
 import Line from '../../public/line.svg'
 import React, { useState, useEffect } from 'react'
-import './globals.css'
+import Content from '../../components/content/content';
+
+export interface IContent {
+  no: string,
+  title: string,
+  description: string
+}
+
+let connection: IContent = {
+  no: "01",
+  title: "CONNECTION",
+  description: "Connect with coaches directly, you can ping coaches to view profile."
+}
+
+let collaboration: IContent = {
+  no: "02",
+  title: "COLLABORATION",
+  description: "Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1."
+}
+
+let growth: IContent = {
+  no: "03",
+  title: "GROWTH",
+  description: "Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc"
+}
 
 export default function Home() {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -29,7 +53,7 @@ export default function Home() {
 
   const showSlides = (n: number) => {
     /* if mobile size */
-    if (window.innerWidth <= 620) {
+    if (window.innerWidth <=  619) {
       if (n > slides.length) {
         setSlideIndex(1);
       }
@@ -84,39 +108,15 @@ export default function Home() {
         <Image src={Line} alt="line" className={styles.line} width={0} height={0} />
 
         <div className={`${styles.connection} slider`}>
-          <div className={styles.article}>
-            <div className={styles.title}>
-              <div className={styles.titlenumber}>01</div>
-              <div className={styles.titletext}>CONNECTION</div>
-            </div>
-            <div className={styles.description}>
-              Connect with coaches directly, you can ping coaches to view profile.
-            </div>
-          </div>
+          <Content data={connection} />
         </div>
 
         <div className={`${styles.collaboration} slider`}>
-          <div className={styles.article}>
-            <div className={styles.title}>
-              <div className={styles.titlenumber}>02</div>
-              <div className={styles.titletext}>COLLABORATION</div>
-            </div>
-            <div className={styles.description}>
-              Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
-            </div>
-          </div>
+          <Content data={collaboration} />
         </div>
 
         <div className={`${styles.growth} slider`}>
-          <div className={styles.article}>
-            <div className={styles.title}>
-              <div className={styles.titlenumber}>03</div>
-              <div className={styles.titletext}>GROWTH</div>
-            </div>
-            <div className={styles.description}>
-              Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc
-            </div>
-          </div>
+          <Content data={growth} />
         </div>
 
         <div className={styles.dotgroup}>

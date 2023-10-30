@@ -8,42 +8,6 @@
   z-index: 1;
 }
 
-.title {
-  letter-spacing: 1.5px;
-  font-weight: 400;
-  display: inline-flex;
-}
-
-.titlenumber {
-  font-size: 18px;
-  line-height: 21.09px;
-  position: relative;
-  display: inline-block;
-  padding: 5px 10px 10px 5px;
-}
-
-.titlenumber::after {
-  content: '';
-  position: absolute;
-  bottom: 5px;
-  left: 38%;
-  transform: translateX(-50%);
-  width: 22px;
-  height: 5px;
-  background-color: #603EBE;
-  border-radius: 10px;
-}
-
-.titletext {
-  font-size: 36px;
-  color: #C2C2C2;
-}
-
-.description {
-  font-weight: 400;
-  line-height: 28px;
-}
-
 .slideshow-container {
   position: relative;
   margin: auto;
@@ -68,13 +32,11 @@
 @media only screen and (max-width: 620px) {
   .dotgroup {
     position: absolute;
-    left: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     bottom: 30px;
-  }
-
-  .article {
-    margin-top: 50%;
-    margin-left: unset;
   }
 
   .dotgroup {
@@ -83,7 +45,86 @@
 
   .football {
     position: absolute;
-    width: 218px;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -180px;
+  }
+
+  .athlets {
+    padding-left: 18px;
+    line-height: 58.59px;
+  }
+
+  .athletsText {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58.59px;
+    color: #E7E7E7;
+  }
+
+  .plusDarkFootball {
+    display: unset;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    flex-shrink: 0;
+    left: 10%;
+    top: 70px;
+  }
+
+  .plusFootball {
+    display: unset;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    flex-shrink: 0;
+  }
+
+  .line {
+    display: unset;
+    position: absolute;
+    width: 336.89px;
+    height: 297.23px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .connection, .collaboration, .growth {
+    display: none;
+    background-color: #F5F4F9;
+    margin-top: 400px;
+    padding-left: 22px;
+    padding-right: 22px;
+    height: 284px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .dotgroup {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .dotgroup {
+    text-align: center;
+  }
+
+  .football {
+    position: absolute;
+    width: 200px;
     height: 281px;
     top: 70px;
     left: 70px;
@@ -139,27 +180,6 @@
     padding-left: 22px;
     height: 284px;
   }
-
-  .article {
-    padding-top: 72px;
-  }
-
-  .titlenumber {
-    font-size: 14px;
-  }
-
-  .titletext {
-    font-size: 28px;
-  }
-
-  .description {
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-top: 20px;
-    width: 284px;
-  }
 }
 
 @media only screen and (min-width: 620px) {
@@ -185,42 +205,15 @@
     margin-left: 40%;
   }
 
+  .athletsText {
+    padding-top: 80px;
+  }
+
   .football {
-    left: -200px;
+    left: -201px;
     top: 120px;
     width: 518px;
     height: 699px;
-  }
-
-  .description {
-    font-size: 18px;
-    padding-top: 21px;
-    font-style: normal;
-    width: 350px;
-  }
-
-  .titlenumber {
-    font-size: 18px;
-    line-height: 21.09px;
-    position: relative;
-    display: inline-block;
-    padding: 6px 10px 6px 0px;
-  }
-
-  .titlenumber::after {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 34%;
-    transform: translateX(-50%);
-    width: 22px;
-    height: 5px;
-    background-color: #603EBE;
-    border-radius: 10px;
-  }
-
-  .growth .titlenumber::after {
-    background-color: #FFFFFF;
   }
 
   .growth {
@@ -262,12 +255,8 @@
     z-index: -1;
   }
 
-  .athletsText {
-    padding-top: 80px;
-  }
-
   .connection {
-    height: 180px;
+    height: 190px;
   }
 
   .connection .title {
@@ -275,19 +264,16 @@
   }
 
   .collaboration {
-    height: 270px;
+    height: 235px;
   }
 
+  .growth .article,
   .collaboration .article {
     padding-top: 30px;
   }
 
   .growth {
     height: 220px;
-  }
-
-  .growth .article {
-    padding-top: 30px;
   }
 }
 
@@ -298,18 +284,7 @@
     font-size: 90px;
     line-height: 105.47px;
     color: #E7E7E7;
-    padding-top: 20px;
-  }
-
-  .description {
-    font-size: 18px;
-    padding-top: 21px;
-    font-style: normal;
-    width: 447px;
-  }
-
-  .growth .description {
-    color: #FFFFFF;
+    padding-top: 87px;
   }
 }
 
@@ -322,8 +297,7 @@
     padding-top: 24px
   }
 
-  .headArticle,
-  .article {
+  .headArticle {
     margin-left: 47%;
   }
 
@@ -333,26 +307,14 @@
     left: -10px;
   }
 
-  .description {
-    width: 517px;
-  }
-
   .line,
   .plusFootball,
   .plusDarkFootball {
     display: none;
   }
 
-  .description {
-    width: 460px;
-  }
-
   .collaboration {
     height: 203px;
-  }
-
-  .connection {
-    height: 220px;
   }
 
   .connection .title {
@@ -376,7 +338,7 @@
   }
 }
 
-/* Desktop styles */
+
 @media only screen and (min-width: 1280px) {
 
   .headArticle,
@@ -399,11 +361,6 @@
   .plusFootball,
   .plusDarkFootball {
     display: none;
-  }
-
-  .description {
-    font-size: 20px;
-    width: 600px;
   }
 
   .connection {
@@ -433,10 +390,6 @@
 }
 
 @media only screen and (min-width: 1600px) {
-  .description {
-    width: 717px;
-  }
-
   .football {
     width: 678px;
     height: 950px;
@@ -490,6 +443,7 @@
   }
 }
 
+/* Desktop styles */
 @media screen and (min-width: 1920px) {
 
   .headArticle,
