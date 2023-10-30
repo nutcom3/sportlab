@@ -193,7 +193,8 @@
     font-size: 18px;
     padding-top: 21px;
     font-style: normal;
-    width: 447px;
+    width: auto;
+    padding-right: 30px;
   }
 
   .article {
@@ -206,19 +207,12 @@
     margin-left: 47%;
   }
 
-  .description {
-    width: 460px;
-  }
-
   .first .title {
     padding-top: 40px;
   }
 
+  .thrid ,
   .second {
-    height: 250px;
-  }
-
-  .thrid {
     height: 250px;
   }
 
@@ -234,7 +228,6 @@
 
   .description {
     font-size: 20px;
-    width: 600px;
   }
 
   .first {
@@ -279,31 +272,6 @@
   .first .description {
     padding-top: 31px;
   }
-
-  .first {
-    height: 220px;
-  }
-
-  .first .title {
-    padding-top: 59px;
-  }
-
-  .second {
-    height: 256px;
-  }
-
-  .second .article {
-    padding-top: 53px;
-  }
-
-  .third {
-    height: 297px;
-  }
-
-  .third .article {
-    padding-top: 80px;
-  }
-
 }
 
 /* Desktop styles */

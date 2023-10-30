@@ -7,7 +7,8 @@ import PlusDark from '../../public/plusdark.svg'
 import Plus from '../../public/plus.svg'
 import Line from '../../public/line.svg'
 import React, { useState, useEffect } from 'react'
-import Content from '../../components/content/content';
+import Content from '../../components/content';
+import Athlets from '../../components/athlets';
 
 export interface IContent {
   no: string,
@@ -96,11 +97,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.footballContent} onClick={() => plusSlides(1)}>
-        <div className={styles.athlets}>
-          <div className={styles.headArticle}>
-            <div className={styles.athletsText}>ATHLETS</div>
-          </div>
-        </div>
+        <Athlets />
 
         <Image src={Plus} alt="plus" className={styles.plusFootball} width={0} height={0} />
         <Image src={PlusDark} alt="plusdark" className={styles.plusDarkFootball} width={0} height={0} />

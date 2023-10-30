@@ -28,7 +28,6 @@
   background-color: #5C3CAF;
 }
 
-
 @media only screen and (max-width: 620px) {
   .dotgroup {
     position: absolute;
@@ -51,18 +50,6 @@
     left: 0;
     right: 0;
     top: -180px;
-  }
-
-  .athlets {
-    padding-left: 18px;
-    line-height: 58.59px;
-  }
-
-  .athletsText {
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 58.59px;
-    color: #E7E7E7;
   }
 
   .plusDarkFootball {
@@ -94,6 +81,7 @@
     margin-left: auto;
     margin-right: auto;
     top: 82.91px;
+    left : 5%;
     z-index: -1;
   }
 }
@@ -118,18 +106,6 @@
     height: 281px;
     top: 70px;
     left: 52px;
-  }
-
-  .athlets {
-    padding-left: 18px;
-    line-height: 58.59px;
-  }
-
-  .athletsText {
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 58.59px;
-    color: #E7E7E7;
   }
 
    .football {
@@ -184,23 +160,6 @@
     margin: 0px;
   }
 
-  .athletsText {
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 105.47px;
-    color: #E7E7E7;
-    padding-top: 20px;
-  }
-
-  .headArticle,
-  .article {
-    margin-left: 40%;
-  }
-
-  .athletsText {
-    padding-top: 80px;
-  }
-
   .football {
     left: -201px;
     top: 120px;
@@ -244,18 +203,6 @@
 
 /* Tablet styles */
 @media only screen and (min-width: 768px) {
-  .athletsText {
-    font-weight: 400;
-    font-size: 90px;
-    line-height: 105.47px;
-    color: #E7E7E7;
-    padding-top: 87px;
-  }
-
-  .headArticle {
-    margin-left: 291px;
-  }
-
   .football {
     left: -161px;
     top: 120px;
@@ -265,18 +212,6 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .athletsText {
-    padding-top: unset;
-  }
-
-  .athlets {
-    padding-top: 24px
-  }
-
-  .headArticle {
-    margin-left: 47%;
-  }
-
   .football {
     height: 800px;
     top: 45px;
@@ -288,17 +223,10 @@
   .plusDarkFootball {
     display: none;
   }
-
-
 }
 
 
 @media only screen and (min-width: 1280px) {
-  .headArticle,
-  .article {
-    margin-left: 50%;
-  }
-
   .football {
     width: 678px;
     height: 950px;
@@ -320,28 +248,10 @@
     top: 35px;
     left: 125px;
   }
-
-  .headArticle {
-    padding-top: 24px;
-  }
-
-  .article {
-    position: absolute;
-  }
-
-  .athlets {
-    padding-top: 0px;
-  }
 }
 
 /* Desktop styles */
 @media screen and (min-width: 1920px) {
-
-  .headArticle,
-  .article {
-    margin-left: 1008px;
-  }
-
   .football {
     width: 678px;
     height: 950px;
