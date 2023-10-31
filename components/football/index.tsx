@@ -37,7 +37,6 @@ let growth: IContent = {
 export default function Football() {
   const [slideIndex, setSlideIndex] = useState(1);
 
-
   useEffect(() => {
     const slides: HTMLCollection = document.getElementsByClassName('slider') as HTMLCollection;
     const dots: HTMLCollection = document.getElementsByClassName('dot') as HTMLCollection;
@@ -82,8 +81,6 @@ export default function Football() {
       window.removeEventListener('resize', handleResize);
     };
   }, [slideIndex]);
-
-
 
   const plusSlides = (index: number) => {
     let newIndex = slideIndex + index;

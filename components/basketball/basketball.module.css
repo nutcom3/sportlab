@@ -26,44 +26,35 @@
 @media only screen and (max-width: 620px) {
   .basketball {
     position: absolute;
-    width: 318px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    top: -180px;
-  }
-
-  .plusDarkBasketball {
-    display: unset;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    flex-shrink: 0;
-    top: 689px;
-    left: 74px;
-  }
-
-  .plusBasketball {
-    display: unset;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 680px;
-    left: 52px;
-    flex-shrink: 0;
+    height: auto;
   }
 
   .lineBas {
     display: unset;
     position: absolute;
-    width: 106.35px;
-    height: 123.2px;
+    width: 235.823px;
+    height: 208.061px;
     flex-shrink: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 789.92px;
+    top: 900px;
     left: 52px;
+    z-index: -1;
+  }
+
+  .lineBas2 {
+    display: unset;
+    position: absolute;
+    width: 235.823px;
+    height: 208.061px;
+    flex-shrink: 0;
+    top: 850px;
+    left: 50%;
     z-index: -1;
   }
 
@@ -79,6 +70,33 @@
   .dotgroup2 {
     text-align: center;
   }
+
+  .plusBasketball {
+    display: unset;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 850px;
+    left: 20%;
+    flex-shrink: 0;
+  }
+
+  .plusDarkBasketball {
+    display: unset;
+    position: absolute;
+    flex-shrink: 0;
+    top: 860px;
+    left: 25%;
+  }
+ 
+  .plusDarkBasketball2 {
+    display: unset;
+    position: absolute;
+    flex-shrink: 0;
+    top: 1000px;
+    left: 75%;
+  }
+
 }
 
 /* Mobile styles */
@@ -89,6 +107,30 @@
     height: 249px;
     top: 681px;
     left: 3px;
+  }
+
+ .lineBas {
+    display: unset;
+    position: absolute;
+    width: 106.35px;
+    height: 123.2px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 789.92px;
+    left: 52px;
+    z-index: -1;
+  }
+
+  .lineBas2 {
+    display: unset;
+    position: absolute;
+    width: 76.69px;
+    height: 89.84px;
+    flex-shrink: 0;
+    top: 704.32px;
+    left: 199.89px;
+    z-index: -1;
   }
 
   .plusBasketball {
@@ -120,30 +162,7 @@
     top: 830px;
     left: 269px;
   }
-
-  .lineBas {
-    display: unset;
-    position: absolute;
-    width: 106.35px;
-    height: 123.2px;
-    flex-shrink: 0;
-    margin-left: auto;
-    margin-right: auto;
-    top: 789.92px;
-    left: 52px;
-    z-index: -1;
-  }
-
-  .lineBas2 {
-    display: unset;
-    position: absolute;
-    width: 76.69px;
-    height: 89.84px;
-    flex-shrink: 0;
-    top: 704.32px;
-    left: 199.89px;
-    z-index: -1;
-  }
+ 
 }
 
 @media only screen and (min-width: 620px) {

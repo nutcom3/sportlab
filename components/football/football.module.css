@@ -29,9 +29,9 @@
     width: 318px;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
+    left: 25px;
     right: 0;
-    top: -180px;
+    top: -190px;
   }
 
   .plusDarkFootball {
@@ -57,13 +57,13 @@
   .line {
     display: unset;
     position: absolute;
-    width: 336.89px;
-    height: 297.23px;
+    width: 256.399px;
+    height:  232.557px; 
     flex-shrink: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 82.91px;
-    left: 5%;
+    top: 100px;
+    left: 20%;
     z-index: -1;
   }
 
@@ -73,7 +73,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 540px;
+    top: 690px;
   }
 
   .dotgroup {
@@ -121,6 +121,12 @@
     left: 69.36px;
     z-index: -1;
   }
+
+
+  .dotgroup {
+    top: 540px;
+  }
+
 }
 
 @media only screen and (min-width: 620px) {
