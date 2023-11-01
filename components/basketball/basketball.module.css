@@ -64,11 +64,9 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 1093px;
-  }
-
-  .dotgroup2 {
+    top: 1450px;
     text-align: center;
+    z-index: 1;
   }
 
   .plusBasketball {
@@ -88,7 +86,7 @@
     top: 860px;
     left: 25%;
   }
- 
+
   .plusDarkBasketball2 {
     display: unset;
     position: absolute;
@@ -109,7 +107,7 @@
     left: 3px;
   }
 
- .lineBas {
+  .lineBas {
     display: unset;
     position: absolute;
     width: 106.35px;
@@ -152,7 +150,7 @@
     top: 689px;
     left: 74px;
   }
- 
+
   .plusDarkBasketball2 {
     display: unset;
     position: absolute;
@@ -162,13 +160,16 @@
     top: 830px;
     left: 269px;
   }
- 
+
+  .dotgroup2 {
+    top: 1093px;
+  }
 }
 
 @media only screen and (min-width: 620px) {
   .basketball {
-    left: -201px;
-    top: 120px;
+    left: 331px;
+    top: 852px;
     width: 518px;
     height: 699px;
   }
@@ -179,40 +180,43 @@
     width: 15.602px;
     height: 15px;
     flex-shrink: 0;
-    top: 110px;
-    left: 59.51px;
+    top: 941px;
+    left: 555px;
+  }
+
+  .plusDarkBasketball2 {
+    display: unset;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    top: 1134px;
+    left: 713px;
+    z-index: -1;
   }
 
   .plusBasketball {
     display: unset;
     position: absolute;
-    width: 15.602px;
+    width: 15px;
     height: 15px;
     flex-shrink: 0;
-    top: 101px;
-    left: 36.63px;
+    top: 924px;
+    left: 533px;
   }
 
-  .lineBasBas {
+  .lineBas {
     display: unset;
     position: absolute;
-    width: 106.35px;
-    height: 123.2px;
+    width: 178.88px;
+    height: 207.22px;
     flex-shrink: 0;
-    top: 789.92;
-    left: 36.54px;
-    z-index: -1;
+    top: 1115.89px;
+    left: 490px;
   }
 
-  .lineBasBas2 {
-    display: unset;
-    position: absolute;
-    width: 106.35px;
-    height: 123.2px;
-    flex-shrink: 0;
-    top: 789.92;
-    left: 36.54px;
-    z-index: -1;
+  .lineBas2 {
+    display: none;
   }
 }
 
@@ -260,9 +264,6 @@
     margin-right: auto;
     left: 0;
     right: 0;
-  }
-
-  .dotgroup2 {
     text-align: center;
   }
 }

@@ -58,7 +58,7 @@
     display: unset;
     position: absolute;
     width: 256.399px;
-    height:  232.557px; 
+    height: 232.557px;
     flex-shrink: 0;
     margin-left: auto;
     margin-right: auto;
@@ -243,3 +243,4 @@
     left: 175px;
   }
 }
+
