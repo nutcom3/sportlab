@@ -35,13 +35,13 @@
 }
 
 @media only screen and (max-width: 620px) {
-  .athlets {
+  .player {
     padding-top: 19px;
     padding-left: 18px;
     line-height: 58.59px;
   }
 
-  .athletsText {
+  .playerText {
     font-weight: 400;
     font-size: 50px;
     line-height: 58.59px;
@@ -50,11 +50,11 @@
 }
 
 @media only screen and (min-width: 620px) {
-  .athletsText {
+  .playerText {
     padding-top: 80px;
   }
 
-  .athletsText {
+  .playerText {
     font-weight: 400;
     font-size: 80px;
     line-height: 105.47px;
@@ -69,25 +69,17 @@
 
 /* Tablet styles */
 @media only screen and (min-width: 768px) {
-  .athletsText {
+  .playerText {
     font-weight: 400;
     font-size: 90px;
     line-height: 105.47px;
     color: #E7E7E7;
-    padding-top: 87px;
-  }
-
-  .headArticle {
-    margin-left: 291px;
+    padding-top: 52px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .headArticle {
-    margin-left: 47%;
-  }
-
-  .athletsText {
+  .playerText {
     padding-top: 24px;
   }
 
@@ -112,7 +104,7 @@
     margin-left: 1008px;
   }
   
-  .athlets {
+  .player {
     padding-top: 0px;
   }
 }

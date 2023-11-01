@@ -173,12 +173,15 @@
   }
 
   .second {
-    height: 250px;
+    height: 235px;
   }
 
-  .thrid .article2,
+  .thrid .article2 {
+    padding-top: 44px;
+  }
+
   .second .article2 {
-    padding-top: 30px;
+    padding-top: 51px;
   }
 
   .thrid {
@@ -192,27 +195,19 @@
     font-size: 18px;
     padding-top: 21px;
     font-style: normal;
-    width: auto;
+    width: 60%;
     padding-right: 30px;
-  }
-
-  .article2 {
-    margin-left: 291px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .article2 {
-    margin-left: 47%;
-  }
-
   .first .title2 {
     padding-top: 40px;
   }
 
   .thrid ,
   .second {
-    height: 250px;
+    height: 235px;
   }
 
   .thrid .article2 {
