@@ -87,24 +87,20 @@
 
 @media only screen and (min-width: 1280px) {
   .headArticle {
-    margin-left: 50%;
+    padding-top: 124px;
+    padding-left: 3%
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .headArticle {
-    padding-top: 24px;
-  }
 
 }
 
 /* Desktop styles */
 @media screen and (min-width: 1920px) {
   .headArticle {
-    margin-left: 1008px;
+    margin-left: 321px;
   }
   
-  .player {
-    padding-top: 0px;
-  }
+  
 }

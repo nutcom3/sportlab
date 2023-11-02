@@ -294,10 +294,10 @@
 
 @media only screen and (min-width: 1280px) {
   .basketball {
-    width: 678px;
-    height: 950px;
-    top: 35px;
-    left: 20px;
+    width: 991px;
+    height: 815px;
+    top:  910px;
+    left: 50%;
   }
 
   .lineBas,
