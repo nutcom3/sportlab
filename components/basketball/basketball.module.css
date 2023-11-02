@@ -203,8 +203,8 @@
     width: 178.88px;
     height: 207.22px;
     flex-shrink: 0;
-    top: 1040.89px;
-    left: 67%;
+    top: 1140.89px;
+    left: 60%;
   }
 
   .lineBas2 {
@@ -322,8 +322,8 @@
     width: 262.52px;
     height: 304.12px;
     flex-shrink: 0;
-    top: 457.84px;
-    left: 50%;
+    top: 357.84px;
+    left: 60%;
   }
 
   .lineBas2 {
@@ -377,7 +377,15 @@
   .basketball {
     left: 40%;
   }
-
+  .lineBas {
+    display: unset;
+    position: absolute;
+    width: 262.52px;
+    height: 304.12px;
+    flex-shrink: 0;
+    top: 357.84px;
+    left: 50%;
+  }
 
 }
 

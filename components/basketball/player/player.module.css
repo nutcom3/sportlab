@@ -89,12 +89,13 @@
     padding-top: 124px;
     padding-left: 3%
   }
+
+  .playerText {
+    padding-top: 0px;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
-  .headArticle {
-    padding-left: 321px;
-  }
 }
 
 /* Desktop styles */

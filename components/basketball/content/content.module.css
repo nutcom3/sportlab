@@ -21,7 +21,7 @@
   transform: translateX(-50%);
   width: 22px;
   height: 5px;
-  background-color: #090C35;
+  background-color: #936EEA;
   border-radius: 10px;
 }
 
@@ -146,7 +146,6 @@
     transform: translateX(-50%);
     width: 22px;
     height: 5px;
-    background-color: #090C35;
     border-radius: 10px;
   }
 
@@ -223,6 +222,7 @@
 @media only screen and (min-width: 1280px) {
   .article2 {
     padding: 30px;
+    padding-left: 3%;
   }
 
   .description2 {
@@ -272,13 +272,8 @@
   .first .description2 {
     padding-top: 31px;
   }
-
-
 }
 
 /* Desktop styles */
 @media screen and (min-width: 1920px) {
-  .article2 {
-    padding-left: 332px;
-  }
 }
