@@ -95,7 +95,7 @@ export default function Football() {
   };
 
   return (
-    <div className={styles.main}>
+    <div className={styles.footballPage}>
       <div className={styles.footballContent} onClick={() => plusSlides(1)}>
         <Athlets />
 

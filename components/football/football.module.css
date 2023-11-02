@@ -3,6 +3,10 @@
   z-index: 1;
 }
 
+.footballPage {
+  position: relative;
+}
+
 .slideshow-container {
   position: relative;
   margin: auto;

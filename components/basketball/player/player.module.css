@@ -80,7 +80,7 @@
 
 @media only screen and (min-width: 992px) {
   .playerText {
-    padding-top: 24px;
+    padding-top: 0px;
   }
 
 }

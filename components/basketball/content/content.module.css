@@ -214,6 +214,10 @@
   .thrid .article2 {
     padding-top: 50px;
   }
+
+  .description2 {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -223,6 +227,7 @@
 
   .description2 {
     font-size: 20px;
+    width: 717px;
   }
 
   .first {
