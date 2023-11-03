@@ -260,6 +260,7 @@
 @media only screen and (min-width: 1600px) {
   .article2 {
     position: absolute;
+    padding-left: 5%;
   }
 
   .description2 {
@@ -278,4 +279,7 @@
 
 /* Desktop styles */
 @media screen and (min-width: 1920px) {
+  .article2 {
+    padding-left: 321px;
+  }
 }
