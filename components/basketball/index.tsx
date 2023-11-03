@@ -81,7 +81,7 @@ export default function Basketball() {
       window.removeEventListener('resize', handleResize);
     };
   }, [slideIndex]);
-  
+
   const plusSlides = (index: number) => {
     let newIndex = slideIndex + index;
     if (newIndex > 3) {
